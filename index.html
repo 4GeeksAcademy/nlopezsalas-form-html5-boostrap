@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Natalia L. Salas " />
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fontawesome JS -->
+    <script src="https://kit.fontawesome.com/b557a4f1a1.js" crossorigin="anonymous"></script>
+
+    <title>Formulario HTML5 Boostrap</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row m-3">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Payment form example</h1>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="alert alert-danger" role="alert">
+                                        Some fields are missing
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-5 col-lg-5">
+                                    <label for="cardNumber" class="form-label">Card #</label>
+                                    <input type="text" class="form-control" id="cardNumber"
+                                        aria-describedby="paymentInfo" placeholder="XXXXXXXXXXXX">
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3">
+                                    <label for="cvcNumber" class="form-label">CVC #</label>
+                                    <input type="text" class="form-control" id="cvcNumber"
+                                        aria-describedby="paymentInfo" placeholder="0000">
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <label for="amount" class="form-label">Amount</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control" aria-label="paymentInfo"
+                                            placeholder="Amount">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName"
+                                        aria-describedby="personInfo">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 ">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" aria-describedby="personInfo">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="lastName" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="lastName" aria-describedby="personInfo">
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3">
+                                    <label for="lastName" class="form-label">State</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Pick a state...</option>
+                                        <option value="1">Spain</option>
+                                        <option value="2">Europe</option>
+                                        <option value="3">Rusian</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3">
+                                    <label for="lastName" class="form-label">Postal code</label>
+                                    <input type="text" class="form-control" id="lastName" aria-describedby="personInfo">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="exampleInputEmail1" class="form-label">We accept:</label><br>
+                                    <div class="bg-secondary p-2 rounded text-white">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="exampleInputEmail1" class="form-label">Message</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" style="height:100px">
+                                    <div id="emailHelp" class="form-text">Add any notes here.
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-end">
+                            <div class="col-12">
+                                <div class="d-grid gap-2 d-md-block">
+                                    <button class="btn btn-secondary" type="button">Cancel</button>
+                                    <button class="btn btn-primary" type="button">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
