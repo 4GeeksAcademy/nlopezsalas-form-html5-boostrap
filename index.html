@@ -64,12 +64,12 @@
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="lastName" class="form-label">City</label>
-                                    <input type="text" class="form-control" id="lastName" aria-describedby="personInfo">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" aria-describedby="personInfo">
                                 </div>
                                 <div class="col-sm-12 col-md-3 col-lg-3">
-                                    <label for="lastName" class="form-label">State</label>
-                                    <select class="form-select" id="inputGroupSelect01">
+                                    <label for="state" class="form-label">State</label>
+                                    <select class="form-select" id="state">
                                         <option selected>Pick a state...</option>
                                         <option value="1">Spain</option>
                                         <option value="2">Europe</option>
@@ -77,33 +77,33 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-12 col-md-3 col-lg-3">
-                                    <label for="lastName" class="form-label">Postal code</label>
-                                    <input type="text" class="form-control" id="lastName" aria-describedby="personInfo">
+                                    <label for="postalCode" class="form-label">Postal code</label>
+                                    <input type="text" class="form-control" id="postalCode" aria-describedby="personInfo">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <label for="exampleInputEmail1" class="form-label">We accept:</label><br>
                                     <div class="bg-secondary p-2 rounded text-white">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                            <input class="form-check-input" type="radio" name="paymentType" id="mastercard" value="mastercard">
+                                            <label class="form-check-label" for="mastercard"><i class="fa-brands fa-cc-mastercard"></i></label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                                            <input class="form-check-input" type="radio" name="paymentType" id="visa" value="visa">
+                                            <label class="form-check-label" for="visa"><i class="fa-brands fa-cc-visa"></i></label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                            <input class="form-check-input" type="radio" name="paymentType" id="dinersClub" value="diners-club">
+                                            <label class="form-check-label" for="dinersClub"><i class="fa-brands fa-cc-diners-club"></i></label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></label>
+                                            <input class="form-check-input" type="radio" name="paymentType" id="amex" value="amex">
+                                            <label class="form-check-label" for="amex"><i class="fa-brands fa-cc-amex"></i></label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
                                     <label for="exampleInputEmail1" class="form-label">Message</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1"
                                         aria-describedby="emailHelp" style="height:100px">
